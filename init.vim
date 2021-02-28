@@ -22,6 +22,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
 
+" === Code Navigation
+Plug 'ludovicchabant/vim-gutentags'
+
 call plug#end()
 
 " Ctrlp options
