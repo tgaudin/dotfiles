@@ -1,6 +1,8 @@
 #!/bin/sh
 
-mkdir -p $HOME/.config/nvim/init.vim
-ln -s $HOME/.config/nvim/init.vim $(pwd)/init.vim
+curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir -p $HOME/.config/nvim/
+ln -s $(pwd)/init.vim $HOME/.config/nvim/init.vim
 
-ln -s $HOME/.screenrc $(pwd)/screenrc
+ln -s $(pwd)/screenrc $HOME/.screenrc
