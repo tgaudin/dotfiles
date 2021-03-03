@@ -4,7 +4,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'arzg/vim-corvine'
 Plug 'fatih/molokai'
 Plug 'datMaffin/vim-colors-bionik'
-" Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline'
 
 " === Highlighting
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
@@ -29,6 +29,9 @@ call plug#end()
 
 " Ctrlp options
 nnoremap <C-b>	:CtrlPBuffer<CR>
+
+" vim-airline options
+let g:airline#extensions#tabline#enabled = 1
 
 " deoplete options
 " let g:deoplete#enable_at_startup = 1
@@ -85,12 +88,12 @@ colorscheme molokai
 set undofile
 set undodir=~/.config/nvim/undodir
 
-set statusline=%t
-set statusline+=%{&ff}
-set statusline+=%h
-set statusline+=%m
-set statusline+=%r
-set statusline+=%y
-set statusline+=%c,
-set statusline+=%l/%L
-set statusline+=\ %P
+" set statusline=%t
+" set statusline+=%{&ff}
+" set statusline+=%h
+" set statusline+=%m
+" set statusline+=%r
+" set statusline+=%y
+" set statusline+=%c,
+" set statusline+=%l/%L
+" set statusline+=\ %P
