@@ -39,6 +39,7 @@ setopt INC_APPEND_HISTORY
 
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
+  alias ls='ls -G'
 fi
 
 alias jup='jupyter notebook'
