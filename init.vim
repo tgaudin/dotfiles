@@ -21,6 +21,7 @@ Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-fugitive'
 
 " === Code Navigation
 Plug 'ludovicchabant/vim-gutentags'
@@ -83,6 +84,7 @@ set sidescrolloff=5
 syntax enable
 set confirm
 set nomodeline
+set signcolumn=yes:2
 colorscheme molokai
 
 set undofile
