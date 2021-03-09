@@ -36,17 +36,3 @@ setopt INC_APPEND_HISTORY
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER='open'
-  alias ls='ls -G'
-fi
-
-alias jup='jupyter notebook'
-alias w3id='pass show -c ibm/w3id'
-alias vim='nvim'
-
-export EDITOR='nvim'
-export VISUAL='nvim'
-export PAGER='less'
