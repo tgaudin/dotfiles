@@ -1,5 +1,6 @@
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
+  alias ls='ls -G'
 else
   export BROWSER='xdg-open'
 fi
