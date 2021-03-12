@@ -10,6 +10,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
 " === Code formatting
+Plug 'sbdchd/neoformat'
 " Plug 'nvie/vim-flake8'
 " Plug 'dense-analysis/ale'
 
@@ -45,6 +46,7 @@ let g:airline#extensions#tabline#enabled = 1
 " let g:ale_linters = {
 " \   'python': ['pyls', 'flake8', 'mypy', 'pylint', 'pyright']
 " \}
+
 
 set nocompatible
 set backspace=indent,eol,start
