@@ -10,9 +10,12 @@ Plug 'vim-airline/vim-airline'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
 " === Code formatting
-Plug 'sbdchd/neoformat'
+" Plug 'sbdchd/neoformat'
 " Plug 'nvie/vim-flake8'
-" Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
+
+" === Writing tools
+Plug 'rhysd/vim-grammarous'
 
 " === Completion and snippets
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -42,10 +45,18 @@ let g:airline#extensions#tabline#enabled = 1
 " \})
 
 " ALE options
-" let g:ale_python_flake8_options = '--max-line-length=88'
-" let g:ale_linters = {
-" \   'python': ['pyls', 'flake8', 'mypy', 'pylint', 'pyright']
-" \}
+let g:ale_python_flake8_options = '--max-line-length=88'
+
+let g:ale_fixers = {
+ \ 'python': ['isort', 'black']
+ \}
+
+let g:ale_linters = {
+ \   '*': ['remove_trailing_line', 'trim_whitespace'],
+ \   'python': ['flake8', 'mypy'],
+ \   'markdown': ['proselint'],
+ \   'text': ['proselint']
+ \}
 
 
 set nocompatible
@@ -91,13 +102,3 @@ colorscheme molokai
 
 set undofile
 set undodir=~/.config/nvim/undodir
-
-" set statusline=%t
-" set statusline+=%{&ff}
-" set statusline+=%h
-" set statusline+=%m
-" set statusline+=%r
-" set statusline+=%y
-" set statusline+=%c,
-" set statusline+=%l/%L
-" set statusline+=\ %P
