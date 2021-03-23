@@ -45,10 +45,12 @@ let g:airline#extensions#tabline#enabled = 1
 " \})
 
 " ALE options
+let g:ale_fix_on_save = 1
 let g:ale_python_flake8_options = '--max-line-length=88'
 
 let g:ale_fixers = {
- \ 'python': ['isort', 'black']
+ \ 'python': ['isort', 'black'],
+ \ 'javascript': ['eslint']
  \}
 
 let g:ale_linters = {
