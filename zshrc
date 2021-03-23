@@ -15,7 +15,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit load romkatv/powerlevel10k
 zinit load zsh-users/zsh-completions
 zinit load ninrod/pass-zsh-completion
-zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
+# zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 
 zstyle :plugin:history-search-multi-word reset-prompt-protect 1
 
