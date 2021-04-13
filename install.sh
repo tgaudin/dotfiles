@@ -11,7 +11,7 @@ if [ ! -d ${HOME}/.zinit ]; then
 fi
 
 ln -s $(pwd)/zshrc $HOME/.zshrc
-ln -s $(pwd)/zprofile $HOME/.zprofile
+ln -s $(pwd)/zshenv $HOME/.zshenv
 
 ###
 ### neovim config install
