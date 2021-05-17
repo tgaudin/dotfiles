@@ -50,7 +50,7 @@ let g:ale_python_flake8_options = '--max-line-length=88'
 
 let g:ale_fixers = {
  \ 'python': ['isort', 'black'],
- \ 'javascript': ['eslint']
+ \ 'javascript': ['eslint', 'prettier']
  \}
 
 let g:ale_linters = {
