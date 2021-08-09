@@ -34,6 +34,8 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt SHARE_HISTORY
 setopt INC_APPEND_HISTORY
 
+autoload -Uz bashcompinit && bashcompinit
+
 eval "$(pyenv init -)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
